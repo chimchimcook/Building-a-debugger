@@ -1,3 +1,6 @@
 {
 	"cmake.sourceDirectory": "/home/xingjiaxin/Code/Building_A_Debugger/sdb",
+	"cmake.configureArgs": [
+		"-DCMAKE_TOOLCHAIN_FILE=/home/xingjiaxin/Code/Building_A_Debugger/vcpkg/scripts/buildsystems/vcpkg.cmake"
+	]
 }
