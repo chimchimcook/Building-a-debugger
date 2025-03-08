@@ -1,3 +1,6 @@
 {
-	"dependencies": ["readline"]
+	"dependencies": [
+		"readline",
+		"catch2"
+	]
 }

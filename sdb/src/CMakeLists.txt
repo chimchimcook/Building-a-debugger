@@ -43,4 +43,3 @@ install(
 	NAMESPACE sdb::
 	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/sdb
 )
-
