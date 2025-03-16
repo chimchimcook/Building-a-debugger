@@ -5,14 +5,33 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "cmake",
+			"type": "cppdbg",
 			"request": "launch",
-			"name": "CMake: 配置项目",
-			"cmakeDebugType": "configure",
-			"clean": false,
-			"configureAll": false
+			"name": "GDB Launch",
+			"cwd": "${workspaceFolder}/sdb/build",
+			"program": "${workspaceFolder}/sdb/build/tools/sdb",
+			"args": [
+				"yes"
+			],
+			"preLaunchTask": "compile sdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "LLDB Launch",
+			"cwd": "${workspaceFolder}/sdb/build",
+			"program": "${workspaceFolder}/sdb/build/tools/sdb",
+			"args": [
+				"yes"
+			],
+			"preLaunchTask": "compile sdb",
 		}
-
-
 	]
 }
