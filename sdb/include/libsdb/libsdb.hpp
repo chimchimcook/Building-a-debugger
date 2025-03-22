@@ -1,8 +1,9 @@
 #ifndef SDB_LIBSDB_HPP
 #define SDB_LIBSDB_HPP
 
-namespace sdb
-{
-void say_hello();
-}
+#include <filesystem>
+#include <memory>
+#include <sys/types.h>
+
+namespace sdb {} // namespace sdb
 #endif /* SDB_LIBSDB_HPP */

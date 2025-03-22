@@ -1,4 +1,9 @@
 add_library(libsdb libsdb.cpp)
+target_sources(
+	libsdb
+	PRIVATE
+	process.cpp
+)
 add_library(sdb::libsdb ALIAS libsdb)
 
 # lib default output name: lib${target_name}.a

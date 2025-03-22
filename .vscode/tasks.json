@@ -12,6 +12,10 @@
 			},
 			"options": {
 				"cwd": "${workspaceFolder}/sdb",
+				"env": {
+					"CC": "gcc",
+					"CXX": "g++",
+				}
 			},
 			"group": {
 				"kind": "build",
@@ -19,7 +23,7 @@
 			},
 			"isBackground": false,
 			"problemMatcher": [],
-			"detail": "编译 sdb"
+			"detail": "编译 sdb",
 		},
 		{
 			"label": "run sdb",
