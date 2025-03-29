@@ -7,12 +7,28 @@
 		{
 			"type": "cppdbg",
 			"request": "launch",
-			"name": "GDB Launch",
+			"name": "GDB Launch sdb",
 			"cwd": "${workspaceFolder}/sdb/build",
 			"program": "${workspaceFolder}/sdb/build/tools/sdb",
 			"args": [
 				"yes"
 			],
+			"preLaunchTask": "compile sdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+		},
+		{
+			"type": "cppdbg",
+			"request": "launch",
+			"name": "GDB Launch test",
+			"cwd": "${workspaceFolder}/sdb/build",
+			"program": "${workspaceFolder}/sdb/build/test/tests",
+			"args": [],
 			"preLaunchTask": "compile sdb",
 			"setupCommands": [
 				{

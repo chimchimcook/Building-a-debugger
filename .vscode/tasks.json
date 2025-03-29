@@ -51,5 +51,31 @@
 			// 	"compile sdb",
 			// ]
 		},
+		{
+			"label": "test sdb",
+			"type": "shell",
+			"command": "./test/tests",
+			/* "args": [
+				"yes"
+			], */
+			"presentation": {
+				"echo": true,
+				"clear": true,
+				"group": "vm"
+			},
+			"options": {
+				"cwd": "${workspaceFolder}/sdb/build",
+			},
+			"group": {
+				"kind": "test",
+				"isDefault": false
+			},
+			"isBackground": false,
+			"problemMatcher": [],
+			"detail": "Test 运行",
+			"dependsOn": [
+				"compile sdb",
+			]
+		},
 	]
 }

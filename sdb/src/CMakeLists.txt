@@ -1,4 +1,4 @@
-add_library(libsdb libsdb.cpp)
+add_library(libsdb libsdb.cpp pipe.cpp)
 target_sources(
 	libsdb
 	PRIVATE
